@@ -4,8 +4,7 @@
   "keywords": ["bigfish", "entity", "mapping"],
   "license": "MIT",
   "require": {
-    "php": ">=5.5",
-    "knplabs/knp-paginator-bundle": "*.*"
+    "php": ">=5.4"
   },
   "autoload": {
     "psr-4": {
