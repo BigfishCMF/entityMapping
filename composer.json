@@ -1,0 +1,15 @@
+{
+  "name": "BigfishCMF/entityMapping",
+  "description": "Entity mapper",
+  "keywords": ["bigfish", "entity", "mapping"],
+  "license": "MIT",
+  "require": {
+    "php": ">=5.5",
+    "knplabs/knp-paginator-bundle": "*.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bigfish\\Mapping\\": "src/"
+    }
+  }
+}
