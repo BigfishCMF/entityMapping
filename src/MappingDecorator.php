@@ -1,6 +1,6 @@
 <?php
 
-namespace Bigfish\Mapping;
+namespace Bigfish\Component\Mapping;
 
 /**
  * Class MappingDecorator
