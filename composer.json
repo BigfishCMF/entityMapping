@@ -1,5 +1,5 @@
 {
-  "name": "BigfishCMF/entityMapping",
+  "name": "bigfishcmf/entity-mapping",
   "description": "Entity mapper",
   "keywords": ["bigfish", "entity", "mapping"],
   "license": "MIT",
