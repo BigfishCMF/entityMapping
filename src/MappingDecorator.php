@@ -16,10 +16,6 @@ class MappingDecorator
      */
     public static function mapEntities($entities = array(), array $mapping = array(), $defaultValues = array())
     {
-        if ($entities instanceof \Knp\Bundle\PaginatorBundle\Pagination\SlidingPagination) {
-            $entities = $entities->getItems();
-        }
-
         $data = array();
 
         foreach ($entities as $entity) {
