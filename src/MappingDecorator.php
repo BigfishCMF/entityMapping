@@ -35,13 +35,19 @@ class MappingDecorator
      * @param $array
      * @param $entities
      */
-    public static function mapEntity(array $entity, array $originalEntity, array &$mapping, $defaultValues = array())
+    public static function mapEntity(array $entity, array $originalEntity, array &$mapping, &$defaultValues = array())
     {
         self::flatten($entity);
 
         foreach ($mapping as $key => &$value) {
             if (is_array($value)) {
-                self::mapEntity($entity, $originalEntity, $value);
+                $map = array();
+
+                if (isset($defaultValues[$key])) {
+                    $map = $defaultValues[$key];
+                }
+
+                self::mapEntity($entity, $originalEntity, $value, $map);
             } elseif (isset($entity[$value])) {
                 $mapping[$key] = $entity[$value];
             } else {
